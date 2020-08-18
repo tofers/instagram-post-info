@@ -28,6 +28,8 @@ class InstagramPostInfo
 
     public function __construct($src)
     {
+        // remove param url
+        $src = strtok($src, '?');
         if (strpos($src, "embed") === false) {
             if (substr($src, -1) != "/") {
                 $src .= "/";
