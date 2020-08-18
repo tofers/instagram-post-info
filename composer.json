@@ -2,7 +2,6 @@
   "name": "tofers/instagram-post-info",
   "description": "Getting data about a post on Instagram. Nickname, location, post date, number of likes, photo.",
   "type": "object",
-  "version": "1.0.0",
   "keywords": ["instagram", "post info", "instagram api post", "instagram post date image"],
   "license": "BSD-3-Clause",
   "authors": [
@@ -21,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "tofers\\instagrampost\\": "lib/"
+      "tofers\\instagrampost\\": ""
     }
   }
 }
