@@ -1,7 +1,7 @@
 {
   "name": "tofers/instagram-post-info",
   "description": "Getting data about a post on Instagram. Nickname, location, post date, number of likes, photo.",
-  "type": "yii2-extension",
+  "type": "project",
   "keywords": ["instagram", "post info", "instagram api post", "instagram post date image"],
   "license": "BSD-3-Clause",
   "authors": [
