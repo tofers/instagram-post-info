@@ -1,0 +1,29 @@
+{
+  "name": "tofers/instagram-post-info",
+  "description": "Getting data about a post on Instagram. Nickname, location, post date, number of likes, photo.",
+  "type": "yii2-extension",
+  "keywords": ["instagram", "post info", "instagram api post", "instagram post date image"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Konstantin Surnin",
+      "email": "acerkot@mail.ru",
+      "homepage": "https://chitoff.ru"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/tofers/instagram-post-info/issues?state=open",
+    "source": "https://github.com/tofers/instagram-post-info"
+  },
+  "autoload": {
+    "psr-4": {
+      "tofers\\instagrampost\\": "lib/"
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
