@@ -26,6 +26,10 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
+See how it works:
+
+https://chitoff.ru/instagram
+
 Set link to extension in your view:
 
 ```php

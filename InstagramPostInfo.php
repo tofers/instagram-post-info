@@ -14,6 +14,8 @@ namespace tofers\instagrampost;
  * @property integer $like
  *
  * @property string $error
+ * @property string $error_code
+ * @property string $error_text
  */
 class InstagramPostInfo
 {
@@ -25,6 +27,8 @@ class InstagramPostInfo
     public $like;
 
     public $error;
+    public $error_code;
+    public $error_text;
 
     public function __construct($src)
     {
@@ -40,11 +44,14 @@ class InstagramPostInfo
         $this->src = $instagram_post;
         $c_instagram = curl_init($instagram_post);
         curl_setopt($c_instagram, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($c_instagram, CURLOPT_FOLLOWLOCATION, 1);
         $instagram_content = curl_exec($c_instagram);
         $instagram_code = curl_getinfo($c_instagram, CURLINFO_HTTP_CODE);
 
         if ($instagram_code != 200) {
             $this->error = $instagram_code;
+            $this->error_code = curl_errno($c_instagram);
+            $this->error_text = curl_strerror($this->error_code);
             return false;
         }
 
