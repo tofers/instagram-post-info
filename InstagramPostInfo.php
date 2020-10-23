@@ -45,6 +45,8 @@ class InstagramPostInfo
         $c_instagram = curl_init($instagram_post);
         curl_setopt($c_instagram, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($c_instagram, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($c_instagram, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284');
+
         $instagram_content = curl_exec($c_instagram);
         $instagram_code = curl_getinfo($c_instagram, CURLINFO_HTTP_CODE);
 
